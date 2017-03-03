@@ -22,9 +22,9 @@ Dicas:
 
 - Aproveite para alterar o **settings.py** para colocar o idioma em pt-br e na timezone correta. Busque seu **timezone** aqui https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-    LANGUAGE_CODE = 'pt-br'
+        LANGUAGE_CODE = 'pt-br'
 
-    TIME_ZONE = 'America/Campo_Grande'
+        TIME_ZONE = 'America/Campo_Grande'
 
 - Em vez do comando **./manager.py syncdb** utilize o comando **./manage.py migrate** para sincronizar e migrar o banco de dados.
  - Para criar o usuário administrador do sistema utilize o comando **./manage.py createsuperuser**
@@ -36,6 +36,7 @@ Dicas:
         Superuser created successfully.
 
 - Na definição da função home edite o arquivo **simplemooc/urls.py** da seguinte forma:
+
         from django.conf.urls import url
         from django.contrib import admin
 
