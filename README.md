@@ -7,7 +7,7 @@ Implementação dos exemplos do curso https://www.udemy.com/python-3-na-web-com-
 ## 003 Ambiente Virtual
 
 Dicas:
-- Para diminuir o caminho no prompt digite o seguinte comando
+- Para diminuir o caminho no prompt, quando ativar o ambiente virtual, digite o seguinte comando
 
     $ PS1="(`basename \"$VIRTUAL_ENV\"`):/\W$ "
 
@@ -28,6 +28,7 @@ Dicas:
 
 - Em vez do comando **./manager.py syncdb** utilize o comando **./manage.py migrate** para sincronizar e migrar o banco de dados.
  - Para criar o usuário administrador do sistema utilize o comando **./manage.py createsuperuser**
+
         ./manage.py createsuperuser
         Username (leave blank to use 'william'): admin
         Email address: admin@admin.com
@@ -46,3 +47,8 @@ Dicas:
             url(r'^$', core_views.home, name='home'),
             url(r'^admin/', admin.site.urls),
         ]
+
+## 006 Introdução aos Templates
+
+## 007 Primeiro Template
+Configurei o Template **core/home.html** para servir todos os arquivos localmente (.css, .js, .png)
